@@ -1,0 +1,32 @@
+{
+  "question": "What was the most significant moment in your work today?",
+  "axis": ["neutral", "past"],
+  "next": [
+    {
+      "condition": "positive experience",
+      "question": "What factors contributed to this positive outcome?",
+      "axis": ["positive", "internal/external"],
+      "next": [
+        {
+          "question": "How can you ensure this happens consistently in the future?",
+          "axis": ["future", "internal"]
+        }
+      ]
+    },
+    {
+      "condition": "negative experience",
+      "question": "What challenges or obstacles did you encounter?",
+      "axis": ["negative", "past"],
+      "next": [
+        {
+          "question": "Were these challenges within your control or influenced by external factors?",
+          "axis": ["locus"]
+        },
+        {
+          "question": "What would you do differently if faced with a similar situation?",
+          "axis": ["future"]
+        }
+      ]
+    }
+  ]
+}
